@@ -1,4 +1,4 @@
-#GBDSO Modules
+# GBDSO Modules
 
 This repository will include one or more schematics and PCBs based on the [GBDSO repository](https://github.com/pyroesp/GBDSO).  
 In here I'll be making modules of the GBDSO schematic so that I can test them individually.  
