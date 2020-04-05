@@ -233,20 +233,6 @@ F 3 "" H 2070 850 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Switch:SW_SPDT SW?
-U 1 1 5F958E74
-P 1830 1460
-AR Path="/5F958E74" Ref="SW?"  Part="1" 
-AR Path="/5F6C55C3/5F958E74" Ref="SW?"  Part="1" 
-AR Path="/5F6C8F99/5F958E74" Ref="SW2"  Part="1" 
-F 0 "SW2" H 1730 1560 50  0000 C CNN
-F 1 "SW_SPDT" H 1680 1360 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" H 1830 1460 50  0001 C CNN
-F 3 "" H 1830 1460 50  0001 C CNN
-	1    1830 1460
-	-1   0    0    1   
-$EndComp
-$Comp
 L MJ-3523-SMT-TR:MJ-3523-SMT-TR J?
 U 1 1 5F958E7A
 P 1300 1800
@@ -303,10 +289,6 @@ $EndComp
 Wire Wire Line
 	1150 2550 1150 2520
 Connection ~ 1150 2520
-Wire Wire Line
-	1630 1560 1630 1750
-Wire Wire Line
-	2030 1460 2030 1640
 Wire Wire Line
 	2030 1640 1950 1640
 Wire Wire Line
@@ -441,43 +423,6 @@ Wire Wire Line
 Wire Wire Line
 	2330 2130 2330 2100
 Connection ~ 2330 2130
-NoConn ~ 1630 1360
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5F958EE1
-P 1190 1290
-AR Path="/5F958EE1" Ref="J?"  Part="1" 
-AR Path="/5F6C55C3/5F958EE1" Ref="J?"  Part="1" 
-AR Path="/5F6C8F99/5F958EE1" Ref="J6"  Part="1" 
-F 0 "J6" H 1110 965 50  0000 C CNN
-F 1 "Conn_01x02" H 1110 1056 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1190 1290 50  0001 C CNN
-F 3 "~" H 1190 1290 50  0001 C CNN
-	1    1190 1290
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1630 1560 1490 1560
-Wire Wire Line
-	1490 1560 1490 1190
-Wire Wire Line
-	1490 1190 1390 1190
-Connection ~ 1630 1560
-$Comp
-L power:GND #PWR?
-U 1 1 5F958EEB
-P 1390 1330
-AR Path="/5F6C55C3/5F958EEB" Ref="#PWR?"  Part="1" 
-AR Path="/5F6C8F99/5F958EEB" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 1390 1080 50  0001 C CNN
-F 1 "GND" H 1395 1157 50  0000 C CNN
-F 2 "" H 1390 1330 50  0001 C CNN
-F 3 "" H 1390 1330 50  0001 C CNN
-	1    1390 1330
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1390 1290 1390 1330
 Text Notes 1250 2110 0    50   ~ 0
 CH A
 $Comp
@@ -641,4 +586,70 @@ Text GLabel 3920 3400 0    50   Input ~ 0
 DPOT_1W
 Text GLabel 3920 3300 0    50   Output ~ 0
 DPOT_1H
+Wire Wire Line
+	1330 1240 1220 1240
+Wire Wire Line
+	1330 1560 1330 1240
+Connection ~ 1500 1230
+Wire Wire Line
+	1500 1140 1500 1230
+Wire Wire Line
+	1220 1140 1500 1140
+Wire Wire Line
+	1500 1230 1630 1230
+Wire Wire Line
+	1500 1260 1500 1230
+$Comp
+L power:GND #PWR?
+U 1 1 5E8A92A9
+P 1500 1260
+AR Path="/5F6C55C3/5E8A92A9" Ref="#PWR?"  Part="1" 
+AR Path="/5F6C72AE/5E8A92A9" Ref="#PWR?"  Part="1" 
+AR Path="/5F6C8F99/5E8A92A9" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 1500 1010 50  0001 C CNN
+F 1 "GND" H 1500 1120 50  0000 C CNN
+F 2 "" H 1500 1260 50  0001 C CNN
+F 3 "" H 1500 1260 50  0001 C CNN
+	1    1500 1260
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5E8A92A3
+P 1020 1140
+AR Path="/5E8A92A3" Ref="J?"  Part="1" 
+AR Path="/5F6C55C3/5E8A92A3" Ref="J?"  Part="1" 
+AR Path="/5F6C72AE/5E8A92A3" Ref="J?"  Part="1" 
+AR Path="/5F6C8F99/5E8A92A3" Ref="J6"  Part="1" 
+F 0 "J6" H 1010 1240 50  0000 C CNN
+F 1 "Conn_01x02" H 1110 920 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1020 1140 50  0001 C CNN
+F 3 "~" H 1020 1140 50  0001 C CNN
+	1    1020 1140
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5E8A929B
+P 1830 1330
+AR Path="/5E8A929B" Ref="SW?"  Part="1" 
+AR Path="/5F6C55C3/5E8A929B" Ref="SW?"  Part="1" 
+AR Path="/5F6C72AE/5E8A929B" Ref="SW?"  Part="1" 
+AR Path="/5F6C8F99/5E8A929B" Ref="SW2"  Part="1" 
+F 0 "SW2" H 1730 1430 50  0000 C CNN
+F 1 "SW_SPDT" H 1680 1230 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPDT_CK-JS102011SAQN" H 1830 1330 50  0001 C CNN
+F 3 "" H 1830 1330 50  0001 C CNN
+	1    1830 1330
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1330 1560 1630 1560
+Wire Wire Line
+	1630 1430 1630 1560
+Connection ~ 1630 1560
+Wire Wire Line
+	1630 1560 1630 1750
+Wire Wire Line
+	2030 1330 2030 1640
 $EndSCHEMATC

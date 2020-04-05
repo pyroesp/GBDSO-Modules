@@ -373,7 +373,7 @@ Connection ~ 1990 1800
 Wire Wire Line
 	1990 1800 2040 1800
 Wire Wire Line
-	1640 1520 1640 1800
+	1640 1520 1640 1650
 Wire Wire Line
 	6030 1360 6030 1300
 Wire Wire Line
@@ -441,43 +441,33 @@ Wire Wire Line
 	5050 2170 5050 2130
 Wire Wire Line
 	5050 1900 5300 1900
-NoConn ~ 1640 1320
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5F84E74B
-P 1150 1350
+P 1030 1230
 AR Path="/5F84E74B" Ref="J?"  Part="1" 
 AR Path="/5F6C55C3/5F84E74B" Ref="J?"  Part="1" 
 AR Path="/5F6C72AE/5F84E74B" Ref="J5"  Part="1" 
-F 0 "J5" H 1070 1025 50  0000 C CNN
-F 1 "Conn_01x02" H 1070 1116 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1150 1350 50  0001 C CNN
-F 3 "~" H 1150 1350 50  0001 C CNN
-	1    1150 1350
-	-1   0    0    1   
+F 0 "J5" H 1020 1330 50  0000 C CNN
+F 1 "Conn_01x02" H 1120 1010 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 1030 1230 50  0001 C CNN
+F 3 "~" H 1030 1230 50  0001 C CNN
+	1    1030 1230
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 1250 1520 1250
-Wire Wire Line
-	1520 1250 1520 1520
-Wire Wire Line
-	1520 1520 1640 1520
-Connection ~ 1640 1520
 $Comp
 L power:GND #PWR?
 U 1 1 5F84E755
-P 1350 1420
+P 1510 1350
 AR Path="/5F6C55C3/5F84E755" Ref="#PWR?"  Part="1" 
 AR Path="/5F6C72AE/5F84E755" Ref="#PWR0104"  Part="1" 
-F 0 "#PWR0104" H 1350 1170 50  0001 C CNN
-F 1 "GND" H 1355 1247 50  0000 C CNN
-F 2 "" H 1350 1420 50  0001 C CNN
-F 3 "" H 1350 1420 50  0001 C CNN
-	1    1350 1420
+F 0 "#PWR0104" H 1510 1100 50  0001 C CNN
+F 1 "GND" H 1510 1210 50  0000 C CNN
+F 2 "" H 1510 1350 50  0001 C CNN
+F 3 "" H 1510 1350 50  0001 C CNN
+	1    1510 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 1350 1350 1420
 Text Notes 1200 2130 0    50   ~ 0
 CH B
 $Comp
@@ -640,4 +630,22 @@ Text GLabel 4010 3430 0    50   Input ~ 0
 Text GLabel 4010 3330 0    50   Input ~ 0
 -2.5V
 NoConn ~ 4040 3930
+Wire Wire Line
+	1510 1350 1510 1320
+Wire Wire Line
+	1510 1320 1640 1320
+Wire Wire Line
+	1230 1230 1510 1230
+Wire Wire Line
+	1510 1230 1510 1320
+Connection ~ 1510 1320
+Wire Wire Line
+	1640 1650 1340 1650
+Wire Wire Line
+	1340 1650 1340 1330
+Wire Wire Line
+	1340 1330 1230 1330
+Connection ~ 1640 1650
+Wire Wire Line
+	1640 1650 1640 1800
 $EndSCHEMATC

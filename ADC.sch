@@ -184,14 +184,14 @@ D6
 Text GLabel 4770 2260 0    50   Output ~ 0
 D7
 $Comp
-L Connector_Generic:Conn_01x16 J13
+L Connector_Generic:Conn_01x24 J13
 U 1 1 5FB9D19F
-P 5030 1960
-F 0 "J13" H 5110 1952 50  0000 L CNN
-F 1 "Conn_01x16" H 5110 1861 50  0000 L CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 5030 1960 50  0001 C CNN
-F 3 "~" H 5030 1960 50  0001 C CNN
-	1    5030 1960
+P 5030 2360
+F 0 "J13" H 5110 2352 50  0000 L CNN
+F 1 "Conn_01x16" H 5110 2261 50  0000 L CNN
+F 2 "Package_DIP:DIP-24_W15.24mm" H 5030 2360 50  0001 C CNN
+F 3 "~" H 5030 2360 50  0001 C CNN
+	1    5030 2360
 	1    0    0    -1  
 $EndComp
 Text GLabel 4770 1260 0    50   Input ~ 0
@@ -275,4 +275,12 @@ Text GLabel 3010 2170 2    50   Output ~ 0
 D6
 Text GLabel 3010 2270 2    50   Output ~ 0
 D7
+NoConn ~ 4830 2860
+NoConn ~ 4830 2960
+NoConn ~ 4830 3060
+NoConn ~ 4830 3160
+NoConn ~ 4830 3260
+NoConn ~ 4830 3360
+NoConn ~ 4830 3460
+NoConn ~ 4830 3560
 $EndSCHEMATC
