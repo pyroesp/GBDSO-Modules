@@ -156,7 +156,7 @@ AR Path="/5F6C72AE/5FB89367" Ref="J?"  Part="1"
 AR Path="/5FABC497/5FB89367" Ref="J12"  Part="1" 
 F 0 "J12" H 4300 1642 50  0000 L CNN
 F 1 "Conn_01x12" H 4300 1551 50  0000 L CNN
-F 2 "Package_DIP:DIP-12_W7.62mm" H 4220 1650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 4220 1650 50  0001 C CNN
 F 3 "~" H 4220 1650 50  0001 C CNN
 	1    4220 1650
 	1    0    0    -1  
@@ -218,7 +218,7 @@ DPOT_1L
 Text GLabel 3990 2150 0    50   Input ~ 0
 DPOT_1W
 Text GLabel 3990 2050 0    50   Output ~ 0
-DPOT_0H
+DPOT_1H
 Text GLabel 3990 1450 0    50   Output ~ 0
 D1
 Wire Wire Line
@@ -228,4 +228,7 @@ Wire Wire Line
 Connection ~ 1850 2760
 Wire Wire Line
 	1850 2760 1850 2380
+Wire Wire Line
+	1480 2430 1550 2430
+Connection ~ 1550 2430
 $EndSCHEMATC
